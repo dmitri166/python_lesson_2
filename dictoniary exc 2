@@ -1,0 +1,9 @@
+user = {'admin': True, 'active': True, 'name': 'kevin'}
+if user['admin']:
+    print("ADMIN " + user.get('name'))
+elif user['active']:
+    print('ACTIVE ' + user.get('name'))
+elif user['admin' and 'active']:
+    print("ACTIVE-ADMIN " + user.get('name'))
+else:
+    print(user.get('name'))
